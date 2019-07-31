@@ -43,6 +43,32 @@ var patients = element("details_patients");
 var details = element("details_products_and_services");
 var languages = element("details_languages");
 
+
+/* more details... */
+
+var clscOp = element("clsc_opening_hours");
+var specialOp = element("special_opening_hours");
+var specialWalkInOp = element("special_walk_in_opening_hours");
+var clscSpecialOp = element("clsc_special_opening_hours");
+var samplingOp = element("sampling_service_opening_hours");
+var nurseOp = element("nurse_service_opening_hours");
+var imageryOp = element("imagery_service_opening_hours");
+var samplingSpecialOp = element("sampling_service_special_opening_hours");
+var nurseSpecialOp = element("nurse_service_special_opening_hours");
+var imagerySpecialOp = element("imagery_service_special_opening_hours");
+
+var generalPhone = element("general_phone");
+var appointmentPhone = element("appointment_phone");
+var complaintPhone = element("complaint_phone");
+var receptionPhone = element("reception_phone");
+
+var samplePhone = element("sample_phone");
+var youthPhone = element("youth_phone");
+var homePhone = element("home_care_phone");
+
+
+
+
 /* input data */
 var sp = document.getElementsByTagName("span");
 
@@ -96,6 +122,35 @@ testbtn.addEventListener('click', function(){
 
   //patients.appendChild(pat);
   //languages.appendChild(lan);
+
+
+ 
+ specialOp.innerHTML = sp[69].innerHTML;
+ specialWalkInOp.innerHTML = sp[73].innerHTML;
+ clscOp.innerHTML = sp[75].innerHTML;
+ clscSpecialOp.innerHTML = sp[77].innerHTML;
+
+ samplingOp.innerHTML = sp[79].innerHTML;
+ samplingSpecialOp.innerHTML = sp[81].innerHTML;
+ 
+ nurseOp.innerHTML = sp[83].innerHTML;
+ nurseSpecialOp.innerHTML = sp[85].innerHTML;
+
+ imageryOp.innerHTML = sp[87].innerHTML;
+ imagerySpecialOp.innerHTML = sp[89].innerHTML;
+
+
+
+
+    generalPhone.setAttribute('value', sp[41].innerHTML);
+    appointmentPhone.setAttribute('value', sp[43].innerHTML);
+    complaintPhone.setAttribute('value', sp[45].innerHTML);
+    receptionPhone.setAttribute('value', sp[47].innerHTML);
+
+    samplePhone.setAttribute('value', sp[49].innerHTML);
+    youthPhone.setAttribute('value', sp[51].innerHTML);
+    homePhone.setAttribute('value', sp[55].innerHTML);
+
 
 
 
@@ -256,10 +311,37 @@ magik.addEventListener('click', function(){
     languages.value = lan;
 
 
+     specialOp.innerHTML = sp[69].innerHTML;
+     specialWalkInOp.innerHTML = sp[73].innerHTML;
+     clscOp.innerHTML = sp[75].innerHTML;
+     clscSpecialOp.innerHTML = sp[77].innerHTML;
+
+     samplingOp.innerHTML = sp[79].innerHTML;
+     samplingSpecialOp.innerHTML = sp[81].innerHTML;
+     
+     nurseOp.innerHTML = sp[83].innerHTML;
+     nurseSpecialOp.innerHTML = sp[85].innerHTML;
+
+     imageryOp.innerHTML = sp[87].innerHTML;
+     imagerySpecialOp.innerHTML = sp[89].innerHTML;
+
+
+     
+    generalPhone.setAttribute('value', sp[41].innerHTML);
+    appointmentPhone.setAttribute('value', sp[43].innerHTML);
+    complaintPhone.setAttribute('value', sp[45].innerHTML);
+    receptionPhone.setAttribute('value', sp[47].innerHTML);
+
+    samplePhone.setAttribute('value', sp[49].innerHTML);
+    youthPhone.setAttribute('value', sp[51].innerHTML);
+    homePhone.setAttribute('value', sp[55].innerHTML);
+
+
+
   
 });
 
-// /* test data */ 
+/* test data */ 
 // var i;
 // for (i = 0; i < sp.length+1; i++) {
 //   console.log('element br.'+i+':  '+sp[i].innerHTML);
