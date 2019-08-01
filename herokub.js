@@ -99,6 +99,7 @@ var addrch = element('addrch');
 var nodesc = element('nodesc');
 
 
+/* test button */ 
 testbtn.addEventListener('click', function(){
 
     // console.log('patients: '+sp[53].innerHTML);
@@ -106,54 +107,54 @@ testbtn.addEventListener('click', function(){
     // console.log('description: '+sp[55].innerHTML);
     // console.log('services: '+sp[9].innerHTML);
 
-    openingHours.innerHTML = sp[47].innerHTML;
-    walkInOpHours.innerHTML = sp[49].innerHTML;
+    // openingHours.innerHTML = sp[47].innerHTML;
+    // walkInOpHours.innerHTML = sp[49].innerHTML;
     
-    pat = sp[53].innerHTML;
-    lan = sp[51].innerHTML;
+    // pat = sp[53].innerHTML;
+    // lan = sp[51].innerHTML;
 
-    console.log(patients);
-    console.log(languages);
-    console.log(pat);
-    console.log(lan);
+    // console.log(patients);
+    // console.log(languages);
+    // console.log(pat);
+    // console.log(lan);
 
-    patients.value = pat;
-    languages.value = lan;
+    // patients.value = pat;
+    // languages.value = lan;
 
   //patients.appendChild(pat);
   //languages.appendChild(lan);
 
 
  
- specialOp.innerHTML = sp[69].innerHTML;
- specialWalkInOp.innerHTML = sp[73].innerHTML;
- clscOp.innerHTML = sp[75].innerHTML;
- clscSpecialOp.innerHTML = sp[77].innerHTML;
+ // specialOp.innerHTML = sp[69].innerHTML;
+ // specialWalkInOp.innerHTML = sp[73].innerHTML;
+ // clscOp.innerHTML = sp[75].innerHTML;
+ // clscSpecialOp.innerHTML = sp[77].innerHTML;
 
- samplingOp.innerHTML = sp[79].innerHTML;
- samplingSpecialOp.innerHTML = sp[81].innerHTML;
+ // samplingOp.innerHTML = sp[79].innerHTML;
+ // samplingSpecialOp.innerHTML = sp[81].innerHTML;
  
- nurseOp.innerHTML = sp[83].innerHTML;
- nurseSpecialOp.innerHTML = sp[85].innerHTML;
+ // nurseOp.innerHTML = sp[83].innerHTML;
+ // nurseSpecialOp.innerHTML = sp[85].innerHTML;
 
- imageryOp.innerHTML = sp[87].innerHTML;
- imagerySpecialOp.innerHTML = sp[89].innerHTML;
-
-
-
-
-    generalPhone.setAttribute('value', sp[41].innerHTML);
-    appointmentPhone.setAttribute('value', sp[43].innerHTML);
-    complaintPhone.setAttribute('value', sp[45].innerHTML);
-    receptionPhone.setAttribute('value', sp[47].innerHTML);
-
-    samplePhone.setAttribute('value', sp[49].innerHTML);
-    youthPhone.setAttribute('value', sp[51].innerHTML);
-    homePhone.setAttribute('value', sp[55].innerHTML);
+ // imageryOp.innerHTML = sp[87].innerHTML;
+ // imagerySpecialOp.innerHTML = sp[89].innerHTML;
 
 
 
 
+ //    generalPhone.setAttribute('value', sp[41].innerHTML);
+ //    appointmentPhone.setAttribute('value', sp[43].innerHTML);
+ //    complaintPhone.setAttribute('value', sp[45].innerHTML);
+ //    receptionPhone.setAttribute('value', sp[47].innerHTML);
+
+ //    samplePhone.setAttribute('value', sp[49].innerHTML);
+ //    youthPhone.setAttribute('value', sp[51].innerHTML);
+ //    homePhone.setAttribute('value', sp[55].innerHTML);
+
+
+ console.log('nothing happens');
+ 
 });
 
 
@@ -177,17 +178,52 @@ nodesc.addEventListener('click', function(){
     addressLat.setAttribute('value', sp[31].innerHTML);
     addressLng.setAttribute('value', sp[33].innerHTML);
 
-    website.setAttribute('value', sp[35].innerHTML);
+      website.setAttribute('value', sp[35].innerHTML);
 
-    logo.setAttribute('value', sp[43].innerHTML);
-    email.setAttribute('value', sp[41].innerHTML);
+    logo.setAttribute('value', sp[63].innerHTML); // was 43
+    email.setAttribute('value', sp[61].innerHTML); // was 41
 
-    rvsqUrl.setAttribute('value', sp[45].innerHTML);
+    rvsqUrl.setAttribute('value', sp[65].innerHTML); // was 45
     phone.setAttribute('value', sp[37].innerHTML);
     phoneExt.setAttribute('value', sp[39].innerHTML);
 
-    openingHours.innerHTML = sp[47].innerHTML;
-    walkInOpHours.innerHTML = sp[49].innerHTML;
+    fax.setAttribute('value', sp[59].innerHTML); // was 57
+
+    openingHours.innerHTML = sp[67].innerHTML; // was 47
+    walkInOpHours.innerHTML = sp[71].innerHTML; // was 49
+
+    pat = sp[93].innerHTML; // was 53
+    lan = sp[91].innerHTML; // was 51
+
+    patients.value = pat;
+    languages.value = lan;
+
+
+     specialOp.innerHTML = sp[69].innerHTML;
+     specialWalkInOp.innerHTML = sp[73].innerHTML;
+     clscOp.innerHTML = sp[75].innerHTML;
+     clscSpecialOp.innerHTML = sp[77].innerHTML;
+
+     samplingOp.innerHTML = sp[79].innerHTML;
+     samplingSpecialOp.innerHTML = sp[81].innerHTML;
+     
+     nurseOp.innerHTML = sp[83].innerHTML;
+     nurseSpecialOp.innerHTML = sp[85].innerHTML;
+
+     imageryOp.innerHTML = sp[87].innerHTML;
+     imagerySpecialOp.innerHTML = sp[89].innerHTML;
+
+
+     
+    generalPhone.setAttribute('value', sp[41].innerHTML);
+    appointmentPhone.setAttribute('value', sp[43].innerHTML);
+    complaintPhone.setAttribute('value', sp[45].innerHTML);
+    receptionPhone.setAttribute('value', sp[47].innerHTML);
+
+    samplePhone.setAttribute('value', sp[49].innerHTML);
+    youthPhone.setAttribute('value', sp[51].innerHTML);
+    homePhone.setAttribute('value', sp[55].innerHTML);
+
  
 });
 
@@ -196,7 +232,7 @@ nodesc.addEventListener('click', function(){
 addrch.addEventListener('click', function(){
 
     name.setAttribute('value', sp[3].innerHTML);
-    description.setAttribute('value', sp[55].innerHTML);
+    description.setAttribute('value', sp[95].innerHTML); // was 55
     directions.setAttribute('value', sp[7].innerHTML);
     services.setAttribute('value', sp[9].innerHTML);
 
@@ -216,25 +252,52 @@ addrch.addEventListener('click', function(){
     //addressLat.setAttribute('value', sp[31].innerHTML);
     //addressLng.setAttribute('value', sp[33].innerHTML);
 
-    website.setAttribute('value', sp[35].innerHTML);
+     website.setAttribute('value', sp[35].innerHTML);
 
-    logo.setAttribute('value', sp[43].innerHTML);
-    email.setAttribute('value', sp[41].innerHTML);
+    logo.setAttribute('value', sp[63].innerHTML); // was 43
+    email.setAttribute('value', sp[61].innerHTML); // was 41
 
-    rvsqUrl.setAttribute('value', sp[45].innerHTML);
+    rvsqUrl.setAttribute('value', sp[65].innerHTML); // was 45
     phone.setAttribute('value', sp[37].innerHTML);
     phoneExt.setAttribute('value', sp[39].innerHTML);
 
-    fax.setAttribute('value', sp[57].innerHTML);
+    fax.setAttribute('value', sp[59].innerHTML); // was 57
 
-    openingHours.innerHTML = sp[47].innerHTML;
-    walkInOpHours.innerHTML = sp[49].innerHTML;
+    openingHours.innerHTML = sp[67].innerHTML; // was 47
+    walkInOpHours.innerHTML = sp[71].innerHTML; // was 49
 
-    pat = sp[53].innerHTML;
-    lan = sp[51].innerHTML;
+    pat = sp[93].innerHTML; // was 53
+    lan = sp[91].innerHTML; // was 51
 
     patients.value = pat;
     languages.value = lan;
+
+
+     specialOp.innerHTML = sp[69].innerHTML;
+     specialWalkInOp.innerHTML = sp[73].innerHTML;
+     clscOp.innerHTML = sp[75].innerHTML;
+     clscSpecialOp.innerHTML = sp[77].innerHTML;
+
+     samplingOp.innerHTML = sp[79].innerHTML;
+     samplingSpecialOp.innerHTML = sp[81].innerHTML;
+     
+     nurseOp.innerHTML = sp[83].innerHTML;
+     nurseSpecialOp.innerHTML = sp[85].innerHTML;
+
+     imageryOp.innerHTML = sp[87].innerHTML;
+     imagerySpecialOp.innerHTML = sp[89].innerHTML;
+
+
+     
+    generalPhone.setAttribute('value', sp[41].innerHTML);
+    appointmentPhone.setAttribute('value', sp[43].innerHTML);
+    complaintPhone.setAttribute('value', sp[45].innerHTML);
+    receptionPhone.setAttribute('value', sp[47].innerHTML);
+
+    samplePhone.setAttribute('value', sp[49].innerHTML);
+    youthPhone.setAttribute('value', sp[51].innerHTML);
+    homePhone.setAttribute('value', sp[55].innerHTML);
+
 
 
 
@@ -246,7 +309,7 @@ addrch.addEventListener('click', function(){
 basik.addEventListener('click', function(){
 
     name.setAttribute('value', sp[3].innerHTML);
-    description.setAttribute('value', sp[55].innerHTML);
+    description.setAttribute('value', sp[95].innerHTML); // was 55
     directions.setAttribute('value', sp[7].innerHTML);
     services.setAttribute('value', sp[9].innerHTML);
 
@@ -270,7 +333,7 @@ basik.addEventListener('click', function(){
 magik.addEventListener('click', function(){
 
     name.setAttribute('value', sp[3].innerHTML);
-    description.setAttribute('value', sp[55].innerHTML);
+    description.setAttribute('value', sp[95].innerHTML); // was 55
     directions.setAttribute('value', sp[7].innerHTML);
     services.setAttribute('value', sp[9].innerHTML);
 
@@ -292,20 +355,20 @@ magik.addEventListener('click', function(){
 
     website.setAttribute('value', sp[35].innerHTML);
 
-    logo.setAttribute('value', sp[43].innerHTML);
-    email.setAttribute('value', sp[41].innerHTML);
+    logo.setAttribute('value', sp[63].innerHTML); // was 43
+    email.setAttribute('value', sp[61].innerHTML); // was 41
 
-    rvsqUrl.setAttribute('value', sp[45].innerHTML);
+    rvsqUrl.setAttribute('value', sp[65].innerHTML); // was 45
     phone.setAttribute('value', sp[37].innerHTML);
     phoneExt.setAttribute('value', sp[39].innerHTML);
 
-    fax.setAttribute('value', sp[57].innerHTML);
+    fax.setAttribute('value', sp[59].innerHTML); // was 57
 
-    openingHours.innerHTML = sp[47].innerHTML;
-    walkInOpHours.innerHTML = sp[49].innerHTML;
+    openingHours.innerHTML = sp[67].innerHTML; // was 47
+    walkInOpHours.innerHTML = sp[71].innerHTML; // was 49
 
-    pat = sp[53].innerHTML;
-    lan = sp[51].innerHTML;
+    pat = sp[93].innerHTML; // was 53
+    lan = sp[91].innerHTML; // was 51
 
     patients.value = pat;
     languages.value = lan;
@@ -343,6 +406,6 @@ magik.addEventListener('click', function(){
 
 /* test data */ 
 // var i;
-// for (i = 0; i < sp.length+1; i++) {
-//   console.log('element br.'+i+':  '+sp[i].innerHTML);
+//  for (i = 0; i < sp.length+1; i++) {
+//    console.log('element br.'+i+':  '+sp[i].innerHTML);
 // } 
